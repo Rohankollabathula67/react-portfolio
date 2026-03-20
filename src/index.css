@@ -1,0 +1,173 @@
+/* ============================================================
+   Global Design System – Rohan Portfolio
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Colors */
+  --color-bg-start:   #00003d;
+  --color-bg-end:     #00007a;
+  --color-accent:     #43cea2;
+  --color-accent-alt: #185a9d;
+  --color-gold:       #daa520;
+  --color-text:       #f0f4ff;
+  --color-text-muted: #a8b5cc;
+  --color-card-bg:    rgba(255, 255, 255, 0.05);
+  --color-card-border:rgba(255, 255, 255, 0.12);
+  --color-glass:      rgba(0, 0, 80, 0.45);
+
+  /* Gradients */
+  --gradient-body:    radial-gradient(ellipse at top left, #0b0060 0%, #00005b 40%, #000040 100%);
+  --gradient-accent:  linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  --gradient-gold:    linear-gradient(135deg, #f9d423 0%, #daa520 100%);
+
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  /* Spacing */
+  --section-padding: 5rem 2rem;
+  --card-radius:     1.25rem;
+  --nav-height:      72px;
+
+  /* Transitions */
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── Reset ────────────────────────────────────────────────── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #000030; }
+::-webkit-scrollbar-thumb { background: var(--color-accent); border-radius: 6px; }
+
+/* ─── Body ──────────────────────────────────────────────────── */
+body {
+  font-family: var(--font-body);
+  background: var(--gradient-body);
+  color: var(--color-text);
+  min-height: 100vh;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Utilities ─────────────────────────────────────────────── */
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--gradient-accent);
+  border-radius: 2px;
+  margin: 0.75rem auto 0;
+}
+
+.gradient-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: var(--gradient-accent);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  box-shadow: 0 4px 20px rgba(67, 206, 162, 0.3);
+  letter-spacing: 0.03em;
+}
+
+.gradient-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(67, 206, 162, 0.45);
+  filter: brightness(1.08);
+}
+
+.outline-btn {
+  display: inline-block;
+  padding: 0.7rem 1.75rem;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  background: transparent;
+  letter-spacing: 0.03em;
+}
+
+.outline-btn:hover {
+  background: var(--color-accent);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(67, 206, 162, 0.3);
+}
+
+/* Subtle glow card */
+.glass-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--card-radius);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Section wrapper */
+section {
+  padding: var(--section-padding);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(218, 165, 32, 0.4), 0 0 40px rgba(67, 206, 162, 0.15); }
+  50%       { box-shadow: 0 0 40px rgba(218, 165, 32, 0.7), 0 0 70px rgba(67, 206, 162, 0.3); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
