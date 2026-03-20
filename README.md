@@ -2,8 +2,7 @@
 
 A sleek, responsive, and highly customizable personal portfolio template built with **React (Vite ⚡)**. Features a premium glassmorphic dark theme, CSS animations, and built-in continuous deployment to **GitHub Pages**.
 
-![Portfolio Preview Demo](https://youtu.be/_IlnJ7NuBE8)
-*(Example of project layout design)*
+[![Watch the Demo](https://img.youtube.com/vi/_IlnJ7NuBE8/0.jpg)](https://youtu.be/_IlnJ7NuBE8)
 
 ## Features
 - **Lightning Fast:** Built with React 19 and Vite
