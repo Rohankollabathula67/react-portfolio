@@ -1,11 +1,11 @@
-# 🚀 Modern React Portfolio
+# My Portfolio
 
 A sleek, responsive, and highly customizable personal portfolio template built with **React (Vite ⚡)**. Features a premium glassmorphic dark theme, CSS animations, and built-in continuous deployment to **GitHub Pages**.
 
-![Portfolio Preview Demo](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1000&q=80) 
+![Portfolio Preview Demo](https://youtu.be/_IlnJ7NuBE8)
 *(Example of project layout design)*
 
-## ✨ Features
+## Features
 - **Lightning Fast:** Built with React 19 and Vite
 - **Premium Design:** Glassmorphism UI, advanced CSS gradients, and micro-animations
 - **100% Component Driven:** Cleanly separated architecture (Hero, Navbar, Skills, Projects, Footer)
@@ -21,7 +21,7 @@ Want to use this portfolio for yourself? Follow these easy steps to get your own
 1. Click the **Fork** button at the top right of this repository to create your own copy.
 2. Clone your forked repository locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/react-portfolio.git
+   git clone https://github.com/Rohankollabathula67/react-portfolio.git
    cd react-portfolio
    ```
 
