@@ -1,8 +1,8 @@
 # My Portfolio
 
-A sleek, responsive, and highly customizable personal portfolio template built with **React (Vite ⚡)**. Features a premium glassmorphic dark theme, CSS animations, and built-in continuous deployment to **GitHub Pages**.
+A sleek, responsive, and highly customizable personal portfolio template built with **React (Vite)**. Features a premium glassmorphic dark theme, CSS animations, and built-in continuous deployment to **GitHub Pages**.
 
-## 🚀 Watch Demo
+## Watch Demo
 
 <p align="center">
   <a href="https://youtu.be/_IlnJ7NuBE8">
