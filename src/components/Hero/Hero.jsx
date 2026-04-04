@@ -50,7 +50,7 @@ export default function Hero() {
         {/* Right – Profile image + Education */}
         <div className="hero-right">
           <div className="lanyard-container">
-            <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} userPhotoUrl="https://avatars.githubusercontent.com/u/118647297?v=4" />
+            <Lanyard position={[0, 0, 13]} fov={25} gravity={[0, -40, 0]} userPhotoUrl="https://avatars.githubusercontent.com/u/118647297?v=4" />
           </div>
 
           <div className="education-card glass-card">

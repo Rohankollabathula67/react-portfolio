@@ -92,6 +92,12 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false, userPhotoUrl }) {
     userTex.colorSpace = THREE.SRGBColorSpace;
     userTex.generateMipmaps = true;
     userTex.minFilter = THREE.LinearMipmapLinearFilter;
+    userTex.flipY = false; // Fixes the upside-down mapping standard in GLB UVs
+    
+    // The photo is 1:1, but the card is rectangular. We can tile/offset it to pseudo-crop it.
+    // By zooming the texture in slightly, we avoid stretched borders if the UV stretches differently.
+    userTex.matrixAutoUpdate = false;
+    userTex.updateMatrix();
   }
 
   const [curve] = useState(
