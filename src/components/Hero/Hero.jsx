@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import Lanyard from '../Lanyard/Lanyard'
 import './Hero.css'
 
 export default function Hero() {
@@ -48,13 +49,8 @@ export default function Hero() {
 
         {/* Right – Profile image + Education */}
         <div className="hero-right">
-          <div className="profile-image-wrapper">
-            <img
-              src="https://avatars.githubusercontent.com/u/118647297?v=4"
-              alt="Kollabathula Rohan profile photo"
-              className="profile-image"
-            />
-            <div className="profile-ring" />
+          <div className="lanyard-container">
+            <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} userPhotoUrl="https://avatars.githubusercontent.com/u/118647297?v=4" />
           </div>
 
           <div className="education-card glass-card">
