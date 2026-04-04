@@ -94,10 +94,11 @@ function Band({ maxSpeed = 50, minSpeed = 0, isMobile = false, userPhotoUrl }) {
     userTex.minFilter = THREE.LinearMipmapLinearFilter;
     userTex.flipY = false; // Fixes the upside-down mapping standard in GLB UVs
     
-    // The photo is 1:1, but the card is rectangular. We can tile/offset it to pseudo-crop it.
-    // By zooming the texture in slightly, we avoid stretched borders if the UV stretches differently.
-    userTex.matrixAutoUpdate = false;
-    userTex.updateMatrix();
+    // Simulate CSS object-fit: cover for the 0.8x1.125 card (aspect ratio 0.711)
+    const cardAspect = 0.8 / 1.125; 
+    userTex.repeat.set(cardAspect, 1);
+    // Center it horizontally
+    userTex.offset.set((1 - cardAspect) / 2, 0);
   }
 
   const [curve] = useState(
