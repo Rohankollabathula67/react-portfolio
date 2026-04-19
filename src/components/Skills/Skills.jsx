@@ -5,14 +5,14 @@ const skills = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
     name: 'HTML5',
     description: 'Semantic markup, accessibility, forms, SEO',
-    certLink: '#',
+    certLink: 'https://drive.google.com/file/d/1Zlo8Bwi7XSy8b18fLt4SRCtWA-0R-yr1/view?usp=sharing',
     color: '#e44d26',
   },
   {
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
     name: 'CSS3 & Bootstrap',
     description: 'Responsive design, Flexbox, Grid, Bootstrap 5',
-    certLink: '#',
+    certLink: 'https://drive.google.com/file/d/1B0DvLqzGnjrhN2WtAxuUlymncfan0b8I/view?usp=sharing',
     color: '#264de4',
   },
   {
@@ -26,7 +26,7 @@ const skills = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
     name: 'Python',
     description: 'Scripting, data analysis, automation, ML',
-    certLink: '#',
+    certLink: 'https://drive.google.com/file/d/1AcCHCF3Sf64Dg_D8oeq54LKUTNw6dB8c/view?usp=sharing',
     color: '#3572a5',
   },
   {
